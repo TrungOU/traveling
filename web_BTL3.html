@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>South Vietnam</title>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="web_BTL.css"/>
+        <script src="jquery-3.6.0.min.js"></script>
+        <script src="web_BTL.js"></script>
+        <link rel="shortcut icon" href="logo.png">
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/
+        animate.min.css"/>
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" 
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" id="et-builder-googlefonts-cached-css" type="text/css" 
+        media="all" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C700%2C700italic%2C900%2C900italic&ver=5.7.6#038;subset=latin,latin-ext">
+    </head>
+    <body id="main" onload="init()">
+        <a class="go" href="javascript:;">GO TO TOP</a>
+        <header id="header">
+            <ul id="nav">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">Location<i class="dropdown-menu fas fa-caret-down"></i></a>
+                    <ul class="subnav">
+                        <li><a href="web_BTL.html">North</a></li>
+                        <li><a href="web_BTL2.html">Central</a></li>
+                        <li><a href="web_BTL3.html">South</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about-us">About us</a></li>
+            </ul>
+        </header>
+        
+        <div id="photoShowContainer">
+            <div id="photoShowWrap">
+                <div class="location_caption">
+                    <h1 class="location_title">Adventure is worthwhile</h1>
+                </div>
+              <div id="photoShow">
+                
+                  <img src="Header/image1.jpg"/>
+                
+                  <img src="Header/image2.jpg"/>
+                
+                  <img src="Header/image3.jpg"/>
+          
+                  <img src="Header/image4.jpg"/>
+          
+                  <img src="Header/image5.jpg"/>
+              </div>
+            </div>
+          </div>
+        <ul id="list-products">
+            <div class="block">
+                <div class="card">
+                    <img src="Nam/image1.jpg" alt="" 
+                    class="card-image"/>
+                    <div class="card-element">
+                    <div class="card-top">
+                        <div class="top-content">
+                            <h3 class="card-title">Mrs. Black Mountain</h3>
+                            <div class="card-live">
+                                <ion-icon name="airplane-outline"></ion-icon>
+                                <span>Ready go</span>
+                            </div>
+                        </div>
+                        <div class="card-user">
+                                <img src="logo.png" alt="" 
+                                class="card-user-avatar"/>
+                            <div class="card-user-info">
+                                <div class="card-user-top">
+                                    <h4 class="card-user-name">Tay Ninh City</h4>
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                </div>
+                                <div class="card-user-local">Southern Vietnam</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <ul class="information">
+                            <li>History: The original name of Ba Den mountain is Ba Dinh, passed down
+                                mouth each other thrilling legends, is a symbol for
+                                Tay Ninh land and people.
+                            </li>
+                            <li>Opening hours: check the opening times regularly.</li>
+                            <li>Ticket price: gathering 50,000 VND - 500,000 VND/person.</li>
+                            <li>Introduction: is the tallest house in the South, the organization
+                                Guinness World Records officially recognized ga
+                                Black Lady is "the largest cable car station in the world". 
+                               </li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block">
+                <div class="card">
+                    <img src="Nam/image5.jpg" alt="" 
+                    class="card-image"/>
+                    <div class="card-element">
+                    <div class="card-top">
+                        <div class="top-content">
+                            <h3 class="card-title">Ben Tre</h3>
+                            <div class="card-live">
+                                <ion-icon name="airplane-outline"></ion-icon>
+                                <span>Ready go</span>
+                            </div>
+                        </div>
+                        <div class="card-user">
+                                <img src="logo.png" alt="" 
+                                class="card-user-avatar"/>
+                            <div class="card-user-info">
+                                <div class="card-user-top">
+                                    <h4 class="card-user-name">Ben Tre City</h4>
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                </div>
+                                <div class="card-user-local">Southern Vietnam</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <ul class="information">
+                            <li>History: Has a formative background associated with
+                                French colonial period. To this day, the government in
+                                Ben Tre is gradually interested in investing in Ben Tre tourism.</li>
+                            <li>Opening hours: not specified.</li>
+                            <li>Ticket price: visitors are free to visit.</li>
+                            <li>Introduction: Ben Tre city is famous for the
+                                Public works such as parks, lakeside... Tourists
+                                It is often said that the people here are very friendly and enthusiastic.</li>
+                        </ul>                    
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block">
+                <div class="card">
+                    <img src="Nam/image3.jpg" alt="" 
+                    class="card-image"/>
+                    <div class="card-element">
+                    <div class="card-top">
+                        <div class="top-content">
+                            <h3 class="card-title">Phu Quoc</h3>
+                            <div class="card-live">
+                                <ion-icon name="airplane-outline"></ion-icon>
+                                <span>Ready go</span>
+                            </div>
+                        </div>
+                        <div class="card-user">
+                                <img src="logo.png" alt="" 
+                                class="card-user-avatar"/>
+                            <div class="card-user-info">
+                                <div class="card-user-top">
+                                    <h4 class="card-user-name">Ha Noi City</h4>
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                </div>
+                                <div class="card-user-local">Southern Vietnam</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <ul class="information">
+                            <li>History: mentioned in many books
+                                ancient, because there are relics and ancient culture, so
+                                has been recognized as the Old Quarter of Hanoi
+                                in 1995.</li>
+                            <li>Opening hours: not specified.</li>
+                            <li>Ticket price: visitors are free to visit.</li>
+                            <li>Introduction: the oldest craft streets among
+                                There are some approved trade streets
+                                of the king. Old architecture and special monuments
+                                color for visitors to nostalgic about the old way of life.</li>
+                        </ul>                    
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block">
+                <div class="card">
+                    <img src="Nam/image4.jpg" alt="" 
+                    class="card-image"/>
+                    <div class="card-element">
+                    <div class="card-top">
+                        <div class="top-content">
+                            <h3 class="card-title">Can Tho</h3>
+                            <div class="card-live">
+                                <ion-icon name="airplane-outline"></ion-icon>
+                                <span>Ready go</span>
+                            </div>
+                        </div>
+                        <div class="card-user">
+                                <img src="logo.png" alt="" 
+                                class="card-user-avatar"/>
+                            <div class="card-user-info">
+                                <div class="card-user-top">
+                                    <h4 class="card-user-name">Can Tho City</h4>
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                </div>
+                                <div class="card-user-local">Southern Vietnam</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <ul class="information">
+                            <li>History: found in the pages of a book from
+                                During the feudal period, Can Tho was also known as
+                                unofficially called Tay Do.</li>
+                                <li>Opening hours: not specified.</li>
+                                <li>Ticket price: visitors are free to visit.</li>
+                            <li>Introduction: Cai Rang floating market is a place
+                                Visiting with bold identity of the river area of Can Tho city
+                                Immerse yourself in the bustling atmosphere. Games
+                                attractive water play such as: water motor, kayaking,
+                                banana float…or rent a highway running along Can Tho beach.</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block">
+                <div class="card">
+                    <img src="Nam/image6.jpg" alt="" 
+                    class="card-image"/>
+                    <div class="card-element">
+                    <div class="card-top">
+                        <div class="top-content">
+                            <h3 class="card-title">City. Ho Chi Minh</h3>
+                            <div class="card-live">
+                                <ion-icon name="airplane-outline"></ion-icon>
+                                <span>Ready go</span>
+                            </div>
+                        </div>
+                        <div class="card-user">
+                                <img src="logo.png" alt="" 
+                                class="card-user-avatar"/>
+                            <div class="card-user-info">
+                                <div class="card-user-top">
+                                    <h4 class="card-user-name">HCM City</h4>
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                </div>
+                                <div class="card-user-local">Southern Vietnam</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <ul class="information">
+                            <li>History: the common old name was Saigon,
+                                is the largest city in Vietnam and also the place
+                                has a long history told through generations.</li>
+                            <li>Opening hours: not specified.</li>
+                            <li>Ticket price: visitors are free to visit.</li>
+                            <li>Introduction: coming to Ho Chi Minh City you will
+                                Immerse yourself in the crowd, bustle, and many spots
+                                famous sightseeing for visitors to learn about the proud history
+                                Vietnamese people.</li>
+                        </ul>                    
+                    </div>
+                    </div>
+                </div>
+            </div>            
+            <div class="block">
+                <div class="card">
+                    <img src="Nam/image8.jpg" alt="" 
+                    class="card-image"/>
+                    <div class="card-element">
+                    <div class="card-top">
+                        <div class="top-content">
+                            <h3 class="card-title">Dau Tieng Lake</h3>
+                            <div class="card-live">
+                                <ion-icon name="airplane-outline"></ion-icon>
+                                <span>Ready go</span>
+                            </div>
+                        </div>
+                        <div class="card-user">
+                                <img src="logo.png" alt="" 
+                                class="card-user-avatar"/>
+                            <div class="card-user-info">
+                                <div class="card-user-top">
+                                    <h4 class="card-user-name">South East</h4>
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                </div>
+                                <div class="card-user-local">Southern Vietnam</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <ul class="information">
+                            <li>History: started construction on April 29, 1981,
+                                is an artificial lake located in 3 provinces including Tay Ninh, Binh Duong and Binh Phuoc.</li>
+                            <li>Opening hours: not specified.</li>
+                            <li>Ticket price: visitors are free to visit.</li>
+                            <li>Introduction: because of the rich and diverse natural landscape
+                                Therefore, the people here develop a lot of tourism and food services.
+                                This is often the place where young people organize picnics and camps.</li>
+                        </ul>                        
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block">
+                <div class="card">
+                    <img src="Nam/image7.jpg" alt="" 
+                    class="card-image"/>
+                    <div class="card-element">
+                    <div class="card-top">
+                        <div class="top-content">
+                            <h3 class="card-title">Ca Mau</h3>
+                            <div class="card-live">
+                                <ion-icon name="airplane-outline"></ion-icon>
+                                <span>Ready go</span>
+                            </div>
+                        </div>
+                        <div class="card-user">
+                                <img src="logo.png" alt="" 
+                                class="card-user-avatar"/>
+                            <div class="card-user-info">
+                                <div class="card-user-top">
+                                    <h4 class="card-user-name">Ca Mau City</h4>
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                </div>
+                                <div class="card-user-local">Southern Vietnam</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <ul class="information">
+                            <li>History: nicknamed Dat Mui and existed a long historical culture.</li>
+                            <li>Opening hours: not specified.</li>
+                            <li>Fare: self-sufficient, free to visit.</li>
+                            <li>Introduction: has the ecosystem and the last location at the pole
+                                In the South of the country, geographical tourism is very attractive to domestic and foreign tourists.
+                                Ca Mau is also mentioned in many Vietnamese folk songs and lyrics.
+                            </li>
+                        </ul>                    
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block">
+                <div class="card">
+                    <img src="Nam/image2.jpg" alt="" 
+                    class="card-image"/>
+                    <div class="card-element">
+                    <div class="card-top">
+                        <div class="top-content">
+                            <h3 class="card-title">Vung Tau</h3>
+                            <div class="card-live">
+                                <ion-icon name="airplane-outline"></ion-icon>
+                                <span>Ready go</span>
+                            </div>
+                        </div>
+                        <div class="card-user">
+                                <img src="logo.png" alt="" 
+                                class="card-user-avatar"/>
+                            <div class="card-user-info">
+                                <div class="card-user-top">
+                                    <h4 class="card-user-name">Vung Tau City</h4>
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                </div>
+                                <div class="card-user-local">Southern Vietnam</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+                        <ul class="information">
+                            <li>History: exist a long historical culture
+                                and so far has not stopped developing tourism.
+                            </li>
+                            <li>Opening hours: not specified.</li>
+                            <li>Ticket price: visitors are free to visit.</li>
+                            <li>Introduction: is a familiar tourist destination, here
+                                There is also Nghinh Ong festival, scenic spots,
+                                The places to visit are extremely diverse, rich and beautiful
+                                The sea stretches to the edge of the city.
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </ul>
+
+        <footer id="about-us">
+            <div id="footer-container" class="flex">
+                <div class="info-avatar">
+                    <div class="info-aboutus">
+                        <img src="Avartar/avatar_1.jpg"/>
+                        <h2>Trung Nguyen<br><span>Student</span></h2>
+                        <a href="https://www.facebook.com/trung.1801.sdm/">contact</a>
+                    </div>
+                </div>
+                <div class="contact flex ">
+                    <div class="email">
+                        <h4 style="margin: 0;">SIGN UP FOR OUR NEWSLETTER</h4>
+                        <p style="margin: 0;">Receive new travel stories from Vietnam once a month in your inbox.</p>
+                        <input type="email" id="user-email" aria-invalid="false" placeholder="Your email"/>
+                        <button  class="enter-email js-send-email">Send</button>
+                    </div>
+                    <div class="social">
+                        <h4 style="margin: 0;">FOLLOW US ON</h4>
+                        <div class="icons">
+                            <i class="fab fa-facebook icon"></i>
+                            <i class="fab fa-youtube icon"></i>
+                            <i class="fab fa-instagram icon"></i>
+                            <i class="fab fa-pinterest icon"></i>
+                            <i class="fab fa-tiktok icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-avatar">
+                    <div class="info-aboutus">
+                        <img src="Avartar/avatar_2.jpg"/>
+                        <h2>Dat Tran<br><span>Student</span></h2>
+                        <a href="https://www.facebook.com/profile.php?id=100016175440808">contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="modal js-modal">
+            <div class="modal-container js-modal-container">
+                
+                    <div class="modal-close js-modal-close">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <header class="modal-header">
+                        <i class="modal-heading-icon fa-regular fa-bell"></i>
+                        Announcement
+                    </header>
+                <div class="modal-body">
+                    <div class="announcement">
+                        <div class="announcement-icon"><i class=" fa-regular fa-circle-check"></i></div>
+                        <p class="description">You have successfully emailed us !</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            const sendBtn=document.querySelector('.js-send-email')
+            const modal=document.querySelector('.js-modal')
+            const modalContainer=document.querySelector('.js-modal-container')
+            const modalClose=document.querySelector('.js-modal-close')
+            function showSend(){
+                modal.classList.add('open')
+            }
+            function hideSend(){
+                modal.classList.remove('open')
+            }
+            sendBtn.addEventListener('click', showSend)
+            modalClose.addEventListener('click', hideSend)
+            modal.addEventListener('click', hideSend)
+            modalContainer.addEventListener('click', function(envent){
+                event.stopPropagation()
+            })
+        </script>
+    </body>
+</html>

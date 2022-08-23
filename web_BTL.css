@@ -1,0 +1,535 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+#main {
+    display: block;
+    margin: 0px;
+}
+
+#nav{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+header.modal-header{
+    background-color: #009688;
+    display: flex;
+    height: 130px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+#header{
+    height: 46px;
+    background-color: #9BcFb8;
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+#nav li{
+    position: relative;
+    display: inline-block;
+}
+
+#nav>li>a{
+    color: #1e523b;
+    text-transform: uppercase;
+    font-family: "VNF-Comic Sans";
+}
+
+#nav .subnav{
+    display:none;
+    padding-left: 0;
+    position: absolute;
+    background-color: #7fb174;
+    color: black;
+    top:100%;
+    left:0;
+    min-width: 160px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.4) ;
+}
+
+#nav .subnav li{
+    display: block;
+
+}
+
+#nav .subnav a{
+    color: #000;
+    padding: 0 10px;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav li a:hover{
+    background-color: #689c97;
+    color: #072a24;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav .dropdown-menu{
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+#photoShowContainer{
+    border: 5px solid #fff;
+    margin: 30px auto 0px auto;
+    position: relative;
+    width: 1200px;
+    height: 600px;
+    -moz-box-shadow: 0px 0px 25px black;
+    -webkit-box-shadow: 0px 0px 25px black;
+    box-shadow: 0px 0px 25px black;
+  }
+  
+  #photoShowWrap{
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  #photoShow{
+    height: 300px;
+    position: relative;
+    width: 6000px;
+  }
+  
+  #photoShow img{
+    float: left;
+    height: 600px;
+    width: 1200px;
+  }
+
+.location_caption{
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    color: #00963b;
+    z-index: 2;
+    margin-top: 300px;
+    font-family: NorthWell;
+    font-size: 35px;
+ }
+ 
+ .location_title{
+    font-family: NorthWell;
+    font-weight: 1000;
+    font-size: 140px;
+ }
+
+/*Croll to top*/
+a.go {
+    font-family: "VNF-Comic Sans";
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    display: block;
+    width: 80px;
+    padding: 20px 20px;
+    background-color: rgb(40 214 183 / 50%);
+    color: black;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 4;
+    text-decoration: none;
+}
+/*Croll to top*/
+
+
+
+#list-products {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin: 20px 20px;
+}
+
+.block { 
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  
+    width: 30%;  
+    position: relative;
+}
+
+.card {
+    border-radius: 20px;
+    overflow: hidden;
+    width: auto;
+    position: relative;
+    height: 315px;
+    background: #fff;
+    -moz-box-shadow: 0px 0px 25px black;
+    -webkit-box-shadow: 0px 0px 25px black;
+    box-shadow: 0px 0px 25px black;    
+    transition: 1s;
+}
+
+.card:hover {
+    transform: scale(1.5);
+    height: 620px;
+    z-index: 4;
+}
+
+.card-image {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-top {
+    padding: 15px 10px;
+}
+
+.top-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-weight: 500;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.card-live {
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 30px;
+    background-color:#009688;
+
+}
+.card-live span {
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+
+.card-user {
+    display: flex;
+    align-items: center;
+}
+
+.card-user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 100rem;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.card-user-info {
+    padding-left: 20px;
+    flex: 1;
+}
+
+.card-user-top {
+    display: flex;
+    align-items: center;
+    margin: -15px 0;
+}
+
+.card-user-name {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1;
+}
+
+.card-user-top ion-icon {
+    color: #20e3b2;
+    margin-left: 5px;
+}
+
+.card-user-local {
+    color: #999;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.card-bottom {
+    padding: 5px 0px;
+    border-top: 1px solid #eee;
+    width: 350px;
+}
+
+.information {
+    justify-content: left;
+    list-style-type: square;
+}
+
+.information > li {
+    padding: 5px;
+}
+
+/*Footer*/
+footer{
+    background-color: #009688;
+}
+#footer-container{
+    justify-content: center;
+    align-items: center;
+}
+.contact{
+    width:70%;
+}
+#user-email{
+    border: 1px solid #ccc;
+    width: 93%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    border-radius: 24px;
+
+}
+.info-avatar {
+    position: relative;
+    width: 380px;
+    height: 230px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 15px;
+}
+
+.info-avatar::before {
+    content: '';
+    position: absolute;
+    inset: -25px 75px;
+    background: linear-gradient(315deg, rgb(68 255 0), rgb(11 239 245));
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+}
+
+.info-avatar:hover::before {
+    inset: -20px 0px;
+}
+
+@keyframes animate {
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    0%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.info-avatar::after {
+    content: '';
+    position: absolute;
+    inset: 6px;
+    background: #162052;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.info-aboutus {
+    position: absolute;
+    inset: 30px;
+    border: 6px solid rgb(0 150 136);
+    z-index: 3;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info-aboutus img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.info-avatar:hover .info-aboutus img {
+    opacity: 0;
+}
+
+.info-aboutus h2 {
+    position: relative;
+    font-size: 0.9em;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.info-aboutus h2 span {
+    font-weight: 300;
+    font-size: 0.75em;
+}
+
+.info-aboutus a {
+    position: relative;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #fff;
+    color: #070a1c;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.info-aboutus a:hover {
+    letter-spacing: 0.2em;
+}
+
+.enter-email{
+    height: 39px;
+    width: 100%;
+    cursor: pointer;
+    background-color: blue;
+    border: none;
+    font-size: 15px;
+    border-radius: 24px;
+}
+
+.enter-email:hover{
+    opacity: 0.6;
+}
+
+.contact{
+    margin-top: 20px;
+    margin-left: 32px;
+    margin-right: 32px;
+    width: 100%;
+    font-family:"VNF-Comic Sans" ;
+}
+
+.social{
+    margin-left: 90px;
+    width: 100%;
+    display: block;
+}
+
+.icon{
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal.open{
+    display: flex;
+}
+
+.modal-container{
+    background-color: #fff;
+    width: 900px;
+    min-height: 400px;
+    position: relative;
+}
+
+header.modal-header{
+    background-color: #009688;
+    display: flex;
+    height: 130px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.modal-heading-icon{
+    margin-right: 16px;
+}
+
+.modal-close{
+    position: absolute;
+    right:0;
+    top:0;
+    padding: 24px;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0.8;
+    color: #fff
+}
+
+.modal-close:hover{
+    background-color: red;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.announcement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 46px;
+}
+
+.announcement-icon{
+    margin-right: 12px;
+    font-weight: 500;
+    font-size:5rem;
+    line-height: 100%;
+    background-image: linear-gradient(to right bottom, #6a5af9, #f62682);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.description{
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 100%;
+    background-image: linear-gradient(to right bottom, #6a5af9, #f62682);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+@font-face {font-family: "Northwell"; src: url("//db.onlinewebfonts.com/t/a6db4fb3cf727e10e461d11f5b3349f0.eot"); src: url("//db.onlinewebfonts.com/t/a6db4fb3cf727e10e461d11f5b3349f0.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a6db4fb3cf727e10e461d11f5b3349f0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a6db4fb3cf727e10e461d11f5b3349f0.woff") format("woff"), url("//db.onlinewebfonts.com/t/a6db4fb3cf727e10e461d11f5b3349f0.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a6db4fb3cf727e10e461d11f5b3349f0.svg#Northwell") format("svg"); }
+@font-face {font-family: "VNF-Comic Sans"; src: url("//db.onlinewebfonts.com/t/a67b22306c2e1d6551f2e00b425bc141.eot"); src: url("//db.onlinewebfonts.com/t/a67b22306c2e1d6551f2e00b425bc141.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a67b22306c2e1d6551f2e00b425bc141.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a67b22306c2e1d6551f2e00b425bc141.woff") format("woff"), url("//db.onlinewebfonts.com/t/a67b22306c2e1d6551f2e00b425bc141.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a67b22306c2e1d6551f2e00b425bc141.svg#VNF-Comic Sans") format("svg"); }

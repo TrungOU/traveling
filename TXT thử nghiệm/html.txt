@@ -1,0 +1,24 @@
+        <div class="location">
+            <div class="location_inner">
+                <div class="location_item location_item__active">
+                    <img src="Header/image1.jpg" alt="" class="location_img">
+                    <div class="location_caption">
+                    <h1 class="location_title">Change It As You See Fit</h1>
+                    <p class="location_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cupiditate
+                        corporis laudantium quae velit quam.</p>
+                    </div>
+                </div>
+                <div class="location_item">
+                    <img src="Header/image2.jpg" alt="" class="location_img">
+                </div>
+                <div class="location_item">
+                    <img src="Header/image3.jpg" alt="" class="location_img">
+                </div>
+                <div class="location_item">
+                    <img src="Header/image4.jpg" alt="" class="location_img">
+                </div>
+                <div class="location_item">
+                    <img src="Header/image5.jpg" alt="" class="location_img">
+                </div>
+            </div>
+        </div>
